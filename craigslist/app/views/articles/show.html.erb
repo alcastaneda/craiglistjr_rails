@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+    <ul>
+      <li> <%= @article.description%></li>
+      <li><%= @article.price%></li>
+      <li><%= @article.email%></li>
+    </ul>
+
+<h3><%=link_to @article.category.title, category_path(@article.category)%></h3>

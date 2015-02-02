@@ -1,0 +1,10 @@
+<h1>Add a new article</h1>
+
+
+<%= form_for @article, url: {action: "create"} do |f| %>
+<p><%= f.text_field :title,  placeholder: 'Title'%></p>
+<p><%= f.text_area :description, size: "60x12", placeholder: "Enter your description here" %></p>
+<p><%= f.text_field :price , placeholder: "Price"%></p>
+<p><%= f.select :category, options_for_select(@category_options) %></p>
+  <%= f.submit "Create Article" %>
+<% end %>
