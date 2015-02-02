@@ -5,6 +5,7 @@
 <p><%= f.text_field :title,  placeholder: 'Title'%></p>
 <p><%= f.text_area :description, size: "60x12", placeholder: "Enter your description here" %></p>
 <p><%= f.text_field :price , placeholder: "Price"%></p>
-<p><%= f.select :category, options_for_select(@category_options) %></p>
+<p><%= f.text_field :email , placeholder: "Email Address"%></p>
+<p><%= f.select :category_id, options_for_select(@category_options) %></p>
   <%= f.submit "Create Article" %>
 <% end %>
